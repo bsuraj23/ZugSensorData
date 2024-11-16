@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.ZugData.model.ZugModel;
 @Service
-public class ZugService {
+public class ZugService implements ZugServiceInterface {
 	@Autowired
 	public ZugRepo repo;
 	
@@ -18,7 +18,7 @@ public class ZugService {
 
 	
 	//method to return all JobPosts
-	public List<ZugModel> getAllJobs() {
+	public List<ZugModel> getAllTrains() {
 		return repo.getAllJobs();
 
 		
@@ -33,12 +33,7 @@ public class ZugService {
 
 	
 	
-	
-	// method to add a jobPost
-	public void addJobPost(ZugModel zugModel) {
-		 repo.addJobPost(zugModel);
-	
-	}
+
 
 	
 }

@@ -1,40 +1,38 @@
 package com.example.ZugData.model;
 
 
-import java.util.List;
-
-
+import lombok.Data;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Getter
 @Data
 
 @Component
-public class ZugModel {
+public class StationModel {
 
 
     //getters and setters
-    private int zugId;
-	private String zugProfile;
-	private String zugDesc;
+    private int station;
+	private String stationProfile;
+	private String stationDesc;
 
 
 	//default constructor
-	public ZugModel() {
+	public StationModel() {
 
 	}
 
 	//parameterized constructor
-	public ZugModel(int zugId, String zugProfile, String zugDesc, Integer zugExperience, List<String> zugSkills) {
+	public StationModel(int zugId, String zugProfile, String zugDesc, Integer zugExperience, List<String> zugSkills) {
 		super();
 		this.zugId = zugId;
 		this.zugProfile = zugProfile;
 		this.zugDesc = zugDesc;
-
+		this.zugExperience = zugExperience;
+		this.zugSkills = zugSkills;
 	}
 
     public void setZugId(int zugId) {
@@ -49,7 +47,13 @@ public class ZugModel {
 		this.zugDesc = zugDesc;
 	}
 
+    public void setZugExperience(Integer zugExperience) {
+		this.zugExperience = zugExperience;
+	}
 
+    public void setZugSkills(List<String> zugSkills) {
+		this.zugSkills = zugSkills;
+	}
 
 	@Override
 	public String toString() {
