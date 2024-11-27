@@ -52,8 +52,12 @@ public class ZugRestController {
 	@GetMapping("/stations")
 	public List<StationModel> getAllStations() {
 		return service.getAllStations();
-	}
+
 //
+//		String a = "dfdf";
+//		a.char
+	}
+	//
 //	// Add a station
 //	@PostMapping("/stations")
 //	public void addStation(@RequestBody StationModel stationModel) {
