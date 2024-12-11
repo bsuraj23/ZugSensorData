@@ -58,30 +58,30 @@ public class ZugRestController {
 //		a.char
 	}
 	//
-//	// Add a station
-//	@PostMapping("/stations")
-//	public void addStation(@RequestBody StationModel stationModel) {
-//		service.addStation(stationModel);
-//	}
-//
-//	// Edit a station
-//	@PutMapping("/stations/{id}")
-//	public void editStation(@PathVariable Long id, @RequestBody StationModel stationModel) {
-//		stationModel.setId(id);
-//		service.addStation(stationModel);
-//	}
-//
-//	// Delete a station
-//	@DeleteMapping("/stations/{id}")
-//	public void deleteStation(@PathVariable Long id) {
-//		service.deleteStation(id);
-//	}
-//
-//	// Get a station
-//	@GetMapping("/stations/{id}")
-//	public StationModel getStation(@PathVariable Long id) {
-//		return service.getStationById(id);
-//	}
+	// Add a station
+	@PostMapping("/stations")
+	public void addStation(@RequestBody StationModel stationModel) {
+		service.addStation(stationModel);
+	}
+
+	// Edit a station
+	@PutMapping("/stations/{id}")
+	public void editStation(@PathVariable Long id, @RequestBody StationModel stationModel) {
+		stationModel.setId(id);
+		service.addStation(stationModel);
+	}
+
+	// Delete a station
+	@DeleteMapping("/stations/{id}")
+	public void deleteStation(@PathVariable Long id) {
+		service.deleteStation(id);
+	}
+
+	// Get a station
+	@GetMapping("/stations/{id}")
+	public StationModel getStation(@PathVariable Long id) {
+		return service.getStationById(id);
+	}
 //
 //	// Get all routes
 //	@GetMapping("/routes")
