@@ -10,39 +10,27 @@ import org.springframework.stereotype.Service;
 
 
 import com.example.ZugData.model.ZugModel;
+
+
+import StringTokanizer from java.util.StringTo
 @Service
 public class ZugService implements ZugServiceInterface {
 	@Autowired
 	public ZugRepo repo;
-	
+	ArrayList al = new ArrayList(1,2,3,4,6,8,10);
+//use only one statement to get odd and even ..map reducr filter
+	List<ArrayList>  Evenlist = Stream.filter(temp -> al.getEven()).collect(Collectons.tolist());
+	System.out.println(Evenlist);
+	//
+	//2,4,6,8,10
+	//1/3/5/7/9
 
+	//how can you make it only in one ...
 
-	
-	//method to return all JobPosts
-	public List<ZugModel> getAllTrains() {
+	//
 
-//	return repo.getAllJobs();
-		List<ZugModel> fakeTrains = new ArrayList<>();
-		fakeTrains.add(new ZugModel(1L, "Train 1", "Description 1"));
-		fakeTrains.add(new ZugModel(2L, "Train 2", "Description 2"));
-		fakeTrains.add(new ZugModel(3L, "Train 3", "Description 3"));
-		return fakeTrains;
-//List l = new Arraylist('dfjhdhf');
-//		return l;
-	}
-	
-	
-	
-	
-
-	// ****************************************************************************
-
-	//method to save a job post object into arrayList
-
-
-	
-	
-
+List<Integeters>  Evenlist = Streams.filter(temp -> al.getEven()).collect(Collectons.tolist());
+	List<Integeters>  Evenlist = Streams.filter(temp -> al.getOdd()).collect(Collectons.tolist());
 
 	
 }

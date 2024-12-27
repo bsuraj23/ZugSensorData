@@ -1,6 +1,9 @@
 package com.example.ZugData.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
 
 import com.example.ZugData.model.ZugModel;
 import com.example.ZugData.service.ZugService;
@@ -14,6 +17,9 @@ public class ZugRestController {
 
 	@Autowired
 	private ZugServiceInterface service;
+
+String str1 = "sdgshqdghsgd dhgdgf";
+
 
 
 
