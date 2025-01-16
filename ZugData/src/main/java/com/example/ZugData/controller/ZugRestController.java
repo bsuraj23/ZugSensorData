@@ -88,32 +88,32 @@ String str1 = "sdgshqdghsgd dhgdgf";
 	public StationModel getStation(@PathVariable Long id) {
 		return service.getStationById(id);
 	}
-//
-//	// Get all routes
-//	@GetMapping("/routes")
-//	public List<RouteModel> getAllRoutes() {
-//		return service.getAllRoutes();
-//	}
-//
-//	// Add a route
-//	@PostMapping("/routes")
-//	public void addRoute(@RequestBody RouteModel routeModel) {
-//		service.addRoute(routeModel);
-//	}
-//
-//	// Edit a route
-//	@PutMapping("/routes/{id}")
-//	public void editRoute(@PathVariable Long id, @RequestBody RouteModel routeModel) {
-//		routeModel.setId(id);
-//		service.addRoute(routeModel);
-//	}
-//
-//	// Delete a route
-//	@DeleteMapping("/routes/{id}")
-//	public void deleteRoute(@PathVariable Long id) {
-//		service.deleteRoute(id);
-//	}
-//
+
+	// Get all routes
+	@GetMapping("/routes")
+	public List<RouteModel> getAllRoutes() {
+		return service.getAllRoutes();
+	}
+
+	// Add a route
+	@PostMapping("/routes")
+	public void addRoute(@RequestBody RouteModel routeModel) {
+		service.addRoute(routeModel);
+	}
+
+	// Edit a route
+	@PutMapping("/routes/{id}")
+	public void editRoute(@PathVariable Long id, @RequestBody RouteModel routeModel) {
+		routeModel.setId(id);
+		service.addRoute(routeModel);
+	}
+
+	// Delete a route
+	@DeleteMapping("/routes/{id}")
+	public void deleteRoute(@PathVariable Long id) {
+		service.deleteRoute(id);
+	}
+
 //	// Get a route
 //	@GetMapping("/routes/{id}")
 //	public RouteModel getRoute(@PathVariable Long id) {
