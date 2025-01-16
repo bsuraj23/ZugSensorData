@@ -51,11 +51,11 @@ public class ZugModel {
 
 
 
-	@Override
-	public String toString() {
-		return "ZugModel [zugId=" + zugId + ", zugProfile=" + zugProfile + ", zugDesc=" + zugDesc + ", zugExperience="
-				+ zugExperience + ", zugSkills=" + zugSkills + "]";
-	}
-	
+//	@Override
+//	public String toString() {
+//		return "ZugModel [zugId=" + zugId + ", zugProfile=" + zugProfile + ", zugDesc=" + zugDesc + ", zugExperience="
+//				+ zugExperience + ", zugSkills=" + zugSkills + "]";
+//	}
+//
 
 }

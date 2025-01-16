@@ -17,4 +17,4 @@ class ZugDataApplicationTests {
 		// For example, you can use assertions to verify expected outcomes
 		assertEquals(2, 1 + 1);
 	}
-}d
+}
