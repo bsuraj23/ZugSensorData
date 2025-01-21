@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.example.ZugData.repo")
+@EnableJpaRepositories(basePackages = "com.example.ZugData")
 public class ZugDataApplication {
 
 	public static void main(String[] args) {
