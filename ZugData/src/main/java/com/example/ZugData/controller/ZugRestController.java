@@ -93,20 +93,20 @@ String str1 = "sdgshqdghsgd dhgdgf";
 	@GetMapping("/routes")
 	public List<RouteModel> getAllRoutes() {
 		return service.getAllRoutes();
-//	}
-//
-//	// Add a route
-//	@PostMapping("/routes")
-//	public void addRoute(@RequestBody RouteModel routeModel) {
-//		service.addRoute(routeModel);
-//	}
-//
-//	// Edit a route
-//	@PutMapping("/routes/{id}")
-//	public void editRoute(@PathVariable Long id, @RequestBody RouteModel routeModel) {
-//		routeModel.setId(id);
-//		service.addRoute(routeModel);
-//	}
+	}
+
+	// Add a route
+	@PostMapping("/routes")
+	public void addRoute(@RequestBody RouteModel routeModel) {
+		service.addRoute(routeModel);
+	}
+
+	// Edit a route
+	@PutMapping("/routes/{id}")
+	public void editRoute(@PathVariable Long id, @RequestBody RouteModel routeModel) {
+		routeModel.setId(id);
+		service.addRoute(routeModel);
+	}
 //
 //	// Delete a route
 //	@DeleteMapping("/routes/{id}")
