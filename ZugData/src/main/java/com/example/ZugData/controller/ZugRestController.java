@@ -107,17 +107,17 @@ String str1 = "sdgshqdghsgd dhgdgf";
 		routeModel.setId(id);
 		service.addRoute(routeModel);
 	}
-//
-//	// Delete a route
-//	@DeleteMapping("/routes/{id}")
-//	public void deleteRoute(@PathVariable Long id) {
-//		service.deleteRoute(id);
-//	}
-//
-////	// Get a route
-////	@GetMapping("/routes/{id}")
-////	public RouteModel getRoute(@PathVariable Long id) {
-////		return service.getRouteById(id);
-////	}
+
+	// Delete a route
+	@DeleteMapping("/routes/{id}")
+	public void deleteRoute(@PathVariable Long id) {
+		service.deleteRoute(id);
+	}
+
+	// Get a route
+	@GetMapping("/routes/{id}")
+	public RouteModel getRoute(@PathVariable Long id) {
+		return service.getRouteById(id);
+	}
 
 }
