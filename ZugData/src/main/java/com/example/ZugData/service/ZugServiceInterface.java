@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface ZugServiceInterface {
 
-//    @Autowired
-//    private ZugService service;
+    @Autowired
+    private ZugService service;
     List<ZugModel> getAllTrains();
 
 }
