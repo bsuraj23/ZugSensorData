@@ -18,6 +18,9 @@ public class StationModel {
     private int station;
 	private String stationProfile;
 	private String stationDesc;
+    private String stationotherName ;
+    private int stationId;
+    private String statoinDescription;
 
 
 
