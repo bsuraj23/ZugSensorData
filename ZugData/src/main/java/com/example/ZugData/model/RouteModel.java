@@ -18,6 +18,9 @@ public class RouteModel {
     private int RouteId;
 	private String RouteProfile;
 	private String RouteDesc;
+	private routeothername;
+	private routeDescription;
+	private routeoldrecordId;
 
 
 	//default constructor
