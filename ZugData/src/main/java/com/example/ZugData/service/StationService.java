@@ -21,3 +21,17 @@ public class StationService implements ZugServiceInterface {
 	}
 	
 }
+
+@Override
+public List<ZugModel> getAllStations() {
+	return repo.findAllNONull();
+}
+
+}
+
+@Override
+public List<ZugModel> getAllStations() {
+	return repo.findAllOnlyType();
+}
+
+}
