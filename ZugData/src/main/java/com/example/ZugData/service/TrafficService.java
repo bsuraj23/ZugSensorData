@@ -21,3 +21,21 @@ public class TrafficService implements ZugServiceInterface {
 	}
 	
 }
+@Override
+public List<ZugModel> getAllTrainDetails() {
+	return repo.findAll();
+}
+
+}
+@Override
+public List<ZugModel> getAllTraiServiceDetails() {
+	return repo.findAll();
+}
+
+}
+@Override
+public List<ZugModel> getAllTrainOtherNames() {
+	return repo.findAll();
+}
+
+}
