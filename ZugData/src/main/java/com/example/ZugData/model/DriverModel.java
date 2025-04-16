@@ -36,23 +36,23 @@ public class DriverModel {
 	}
 
     public void setZugId(int zugId) {
-		this.zugId = zugId;
+		this.DriversId = zugId;
 	}
 
     public void setZugProfile(String zugProfile) {
-		this.zugProfile = zugProfile;
+		this.DriversProfile = zugProfile;
 	}
 
     public void setZugDesc(String zugDesc) {
-		this.zugDesc = zugDesc;
+		this.DriversDesc = zugDesc;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "ZugModel [zugId=" + zugId + ", zugProfile=" + zugProfile + ", zugDesc=" + zugDesc + ", zugExperience="
-				+ zugExperience + ", zugSkills=" + zugSkills + "]";
+		return "ZugModel [zugId=" + DriversId + ", zugProfile=" + DriversProfile + ", zugDesc=" + DriversDesc + ", zugExperience="
+				+ DriversExperience + ", zugSkills=" + DriversSkills + "]";
 	}
 //
 

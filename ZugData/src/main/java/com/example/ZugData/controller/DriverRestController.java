@@ -1,5 +1,6 @@
 package com.example.ZugData.controller;
 
+import com.example.ZugData.model.StationModel;
 import com.example.ZugData.model.ZugModel;
 import com.example.ZugData.service.ZugServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,19 +39,20 @@ String str1 = "sdgshqdghsgd dhgdgf";
 		service.addJobPost(zugModel);
 	}
 
-	// Delete a train
+	// Delete a Drivers
+	//Drivers are not in the combined table but individual table only 
 	@DeleteMapping("/drivers/{id}")
 	public void deleteTrain(@PathVariable Long id) {
 		service.deleteJobPost(id);
 	}
 
-	// Get a train
+	// Get a Drivers
 	@GetMapping("/trains/{id}")
 	public ZugModel getTrain(@PathVariable Long id) {
 		return service.getJobPostById(id);
 	}
 
-	// Get all stations
+	// Get all Drivers
 	@GetMapping("/driverGroup")
 	public List<StationModel> getAllStations() {
 		return service.getAllStations();

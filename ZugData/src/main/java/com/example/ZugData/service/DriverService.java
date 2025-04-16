@@ -19,5 +19,28 @@ public class DriverService implements DriverServiceInterface {
 	public List<ZugModel> getAllDrivers() {
 		return repo.findAll();
 	}
-	
+	@Override
+	public List<ZugModel> getAllTrains() {
+		return repo.findAll();
+	}
+
+}
+@Override
+public List<ZugModel> getAllTrainDrivers() {
+	return repo.findAll();
+}
+
+}
+@Override
+public List<ZugModel> getAllTraiServiceDrivers() {
+	return repo.findAll();
+}
+
+}
+@Override
+public List<ZugModel> getAllTrainOtherDrivers() {
+	return repo.findAll();
+}
+
+}
 }
