@@ -4,6 +4,10 @@ import com.example.ZugData.model.ZugModel;
 import com.example.ZugData.service.ZugServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+asihdgsadhgsd
+
+ihagugdafsd
+jdjdfgfd
 
 import java.util.List;
 
